@@ -1,0 +1,71 @@
+/* Basic Styling for Body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Styling the Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Menu Button () */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+nav ul.responsive {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+
+nav ul.responsive li {
+    text-align: left;
+}
+
+nav ul.responsive li a {
+    padding: 10px;
+    border-top: 1px solid #444;
+}
+
+/* Display the menu icon and hide links for small screens */
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul.responsive {
+        display: flex;
+    }
+}

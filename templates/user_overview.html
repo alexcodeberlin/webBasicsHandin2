@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}User Overview{% endblock %}
+
+{% block content %}
+    <h1>Search for a User</h1>
+    <form method="POST">
+        <input type="text" name="username" placeholder="Enter username" required>
+        <button type="submit">Go to Profile</button>
+    </form>
+{% endblock %}
